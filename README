@@ -1,0 +1,3 @@
+// from node buffer
+const charData = [255, 0, ...];
+const matFromArray = new cv.Mat(new Buffer.from(charData), rows, cols, cv.CV_8UC3);

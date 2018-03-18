@@ -1,0 +1,26 @@
+{
+  "name": "postprocess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "ts-node": "./node_modules/.bin/ts-node"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^9.4.7",
+    "opencv4nodejs": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.0",
+    "ts-lint": "^4.5.1",
+    "ts-node": "^4.1.0",
+    "tslint-microsoft-contrib": "^5.0.2",
+    "typescript": "^2.7.2"
+  }
+}
