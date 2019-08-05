@@ -1,12 +1,11 @@
 import * as cv from 'opencv4nodejs';
 
-let inputPath = "/Users/geoff/Projects/WallSync/capture-clone/app/assets/test-resources/1.png";
+let inputPath = "/Users/geoff/Projects/Playground/image-straighten/test/resources/21.png";
 let outputPath = '/tmp/out.png';
 
 
 cv.imreadAsync(inputPath)
     .then((inputAsMat)=>{
-        
         return straightenImage(inputAsMat);
     })
     .then((outputAsMat)=>{
